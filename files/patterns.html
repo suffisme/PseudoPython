@@ -1,0 +1,311 @@
+<html> 
+<head> 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link rel="shortcut icon" type="shortcut-icon" href="images/logo.png">
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" type="text/javascript"></script> 
+<script src="http://www.skulpt.org/js/skulpt.min.js" type="text/javascript"></script> 
+<script src="http://www.skulpt.org/js/skulpt-stdlib.js" type="text/javascript"></script> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</style>
+</head> 
+
+<body> 
+
+
+  <div class="jumbotron">
+      <center>
+      <h1><img src="images/logo.png" height="100">Pseudo Python Writer</h1>
+      <p>
+        Project Managed by : <a href="https://github.com/suffisme"><i class="fa fa-github btn" aria-hidden="true"></i><b>Mohd Sufiyan Ansari</b></a>
+      </p>
+      <p>
+        Social : 
+        <a class="fa fa-facebook btn" aria-hidden="true" href="https://www.facebook.com/sufffiyan" target="_blank"></a>
+        <a class="fa fa-linkedin btn" aria-hidden="true" href="https://www.linkedin.com/in/sufiyan-ansari-1823b2192/" target="_blank"></a>
+        <a class="fa fa-envelope btn" aria-hidden="true" href="mailto:addsufiyan@gmail.com"></a>  
+      </p>
+      <p>
+        Back to
+        <a class="btn text-danger" href="../index.html">HOMEPAGE</a>
+      </p>
+      </center>
+  </div>
+  <div class="container">
+    <center>
+      <h1>
+        Some Example of Turtle Programs
+      </h1>
+    </center>
+  <div class="row">
+    <div class="col-6 bg-dark text-light"> 
+          <h3>Python Code</h3>
+    </div>
+    <div class="col-6 bg-dark text-light">
+          <h3>Pattern Output</h3>      
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-6 bg-light"> 
+    <pre>
+
+from turtle import *
+speed(200)
+for i in range(90):
+  forward(10-(i%5)*(i%5))
+  left(76)
+
+    </pre>
+    </div>
+    <div class="col-6">
+      <img src="images/patterns/pattern_1.jpg">
+    </div>
+  </div>
+  <br>
+  <hr>
+  <br>
+  <div class="row">
+    <div class="col-6 bg-light"> 
+    <pre>
+
+from turtle import *
+import random as m
+speed(2000)
+penup()
+goto(-40,0)
+pendown()
+for i in range(222):
+  forward(80)
+        k = 0
+        if ( i % 6==0):
+               k = 10
+        left(60 + k)
+
+    </pre>
+    </div>
+    <div class="col-6">
+      <img src="images/patterns/pattern_2.jpg" width="350">
+    </div>
+  </div>
+  <br>
+  <hr>
+  <br>
+  <div class="row">
+    <div class="col-6 bg-light"> 
+    <pre>
+
+from turtle import *
+speed(200)
+for i in range(100):
+  forward(100)
+  left(99)
+
+    </pre>
+    </div>
+    <div class="col-6">
+      <img src="images/patterns/pattern_3.jpg" width="350">
+    </div>
+  </div>
+  <br>
+  <hr>
+  <br>
+  <div class="row">
+    <div class="col-6 bg-light"> 
+    <pre>
+
+from turtle import *
+speed(200)
+col = ['red','green','blue']
+for i in range(200):
+        color(col[i%3])
+  forward(i)
+  left(92)
+
+    </pre>
+    </div>
+    <div class="col-6">
+      <img src="images/patterns/pattern_4.jpg" width="350">
+    </div>
+  </div>
+  <br>
+  <hr>
+  <br>
+  <div class="row">
+    <div class="col-6 bg-light"> 
+    <pre>
+
+
+from turtle import *
+speed(2000)
+for i in range(190):
+  forward(80-2*i)
+  left(90)
+
+    </pre>
+    </div>
+    <div class="col-6">
+      <img src="images/patterns/pattern_6.jpg" width="350">
+    </div>
+  </div>
+  <br>
+  <hr>
+  <br>
+  <div class="row">
+    <div class="col-6 bg-light"> 
+    <pre>
+
+import turtle
+r=turtle.Turtle()
+r.penup()
+r.goto(0,-180)
+r.pendown()
+r.color("yellow")
+style=("Courier",20,"italic")
+r.write("Stay Home ,Stay Safe",font=style,align="center")
+r.hideturtle()
+def d(s):
+    for i in range (1,5):
+        s.forward(90)
+        s.right(90)
+def dr():
+    w = turtle.Screen()
+    w.bgcolor("black")
+    k = turtle.Turtle()
+    k.shape("turtle")
+    k.color("yellow")
+    k.speed("fastest")
+    k.pensize(2)
+    for i in range(1,37):
+        d(k)
+        k.right(10)
+    g = turtle.Turtle()
+    an = turtle.Screen()
+    g.shape("turtle")
+    g.color("blue")
+    g.speed("fastest")
+    g.pensize(2)
+    size=1
+    h=1
+    while h<74:
+        g.forward(size)
+        g.right(45)
+        size = size + 1
+        h+=1
+    g.hideturtle()
+    w.exitonclick()
+dr()
+
+    </pre>
+    </div>
+    <div class="col-6">
+      <img src="images/patterns/pattern_7.jpg" width="350">
+      <p>CodeSource : SoloLearn</p>
+    </div>
+
+  </div>
+  <br>
+  <hr>
+  <br>
+  <div class="row">
+    <div class="col-6 bg-light">
+    <h4>Random Squares</h4> 
+    <pre>
+from turtle import *
+import random as rn
+speed(500)
+color_list = ['red','yellow','white','blue','green']
+Screen().bgcolor('black')
+for i in range(50):
+  x = 355*rn.random()
+  y = 335*rn.random()
+  penup()
+  goto(-155+x,200-y)
+  pendown()
+  color(color_list[i%5])
+  right(90)
+  forward(60)
+  right(90)
+  forward(40)
+  right(90)
+  forward(60)
+  right(90)
+  forward(40)
+
+    </pre>
+    </div>
+    <div class="col-6">
+      <img src="images/patterns/pattern_5.jpg" width="350">
+    </div>
+  </div>
+  <center><p>More Patterns Coming Soon...</p></center>
+
+</div>
+<div class="bg-dark">
+  <footer class="page-footer font-small blue pt-4 text-light">
+      <!-- Footer Links -->
+      <div class="container-fluid text-center text-md-left">
+        <!-- Grid row -->
+        <div class="row">
+            <!-- Grid column -->
+            <div class="col-md-6 mt-md-0 mt-3">
+               <!-- Content -->
+              <h5 class="text-uppercase">CODES DEVELOPED BY SUFIYAN ANSARI</h5>
+            </div>
+            <!-- Grid column -->
+          <hr class="clearfix w-100 d-md-none pb-3">
+        <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+            <!-- Links -->
+              <h5 class="text-uppercase">Other Github Repositories</h5>
+              <ul class="list-unstyled">
+                  <li>
+                    <a href="https://suffisme.github.io/VirtualKeyboard" target="_blank">VirtualKeyboard</a>
+                  </li>
+                  <li>
+                    <a href="https://suffisme.github.io/NameWriter" target="_blank">Name Writer</a>
+                  </li>
+                  <li>
+                    <a href="https://suffisme.github.io/NumberGuess" target="_blank">Guessing Game</a>
+                  </li>
+                  <li>
+                    <a href="https://suffisme.github.io/DataAccessor" target="_blank">Data Accessor</a>
+                  </li>
+              </ul>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+
+              <!-- Links -->
+              <h5 class="text-uppercase">SOCIAL MEDIA</h5>
+                <ul class="list-unstyled">
+                  <li>
+                      <a href="https://www.linkedin.com/in/sufiyan-ansari-1823b2192/">Linkedin</a>
+                  </li>
+                  <li>
+                      <a href="https://www.facebook.com/sufffiyan">Facebook</a>
+                  </li>
+                  <li>
+                      <a href="https://www.instagram.com/im_suffi">Instagram</a>
+                  </li>
+                  
+                </ul>
+            </div>
+          <!-- Grid column -->
+        </div>
+      <!-- Grid row -->
+      </div>
+      <!-- Footer Links -->
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="https://github.com/suffisme"> Sufiyan Ansari</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+</div>
