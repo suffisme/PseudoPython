@@ -57,6 +57,22 @@ function runit() {
         mypre.innerHTML = error_string.substr(0,error_string.length - 10)
    });
 }
+Sk.externalLibraries = {
+            numpy : {
+                path: 'https://github.com/ebertmi/skulpt_numpy/blob/master/numpy/__init__.js',
+                dependencies: ['https://github.com/ebertmi/skulpt_numpy/blob/master/deps/math.js'],
+            },
+            matplotlib : {
+                path: 'https://github.com/ebertmi/skulpt_matplotlib/blob/master/matplotlib/__init__.js'
+            },
+            "matplotlib.pyplot" : {
+                path: 'https://github.com/ebertmi/skulpt_matplotlib/blob/master/matplotlib/pyplot/__init__.js',
+                dependencies: ['https://github.com/ebertmi/skulpt_matplotlib/blob/master/deps/d3.min.js'],
+            },
+            "arduino": {
+                path: '/static/primeronoo/skulpt/external/arduino/__init__.js'
+            }
+        };
 
 </script>
 
