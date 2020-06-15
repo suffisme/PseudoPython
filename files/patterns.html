@@ -8,6 +8,13 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<style>
+pre{
+  overflow: scroll;
+  height: 350px;
+  resize: none;
+}
+</style>
 </style>
 </head> 
 
@@ -237,6 +244,44 @@ for i in range(50):
     </div>
     <div class="col-6">
       <img src="images/Pattern_5.jpg" width="350" alt="Seventh Pattern">
+    </div>
+  </div>
+  <br>
+  <hr>
+  <br>
+  <div class="row">
+    <div class="col-6 bg-light">
+    <h4>Pyramid</h4> 
+    <pre>
+from turtle import *
+import time
+speed(200000)
+penup()
+goto(-600,300)
+pendown()
+x = 0
+y = 0
+for r in range(6):
+  goto(-600+x*(99/2),300-y*(85.7365))
+  pendown()
+  for j in range(6-r):
+    for i in range(100):
+      forward(i)
+      right(120)
+    left(120)
+    penup()
+    forward(50)
+    right(90)
+    forward(28.5788)
+    left(90)
+    pendown()
+  penup()
+  x += 1
+  y += 1
+    </pre>
+    </div>
+    <div class="col-6">
+      <img src="images/Pattern_8.jpg" width="350" alt="Seventh Pattern">
     </div>
   </div>
   <center><p>More Patterns Coming Soon...</p></center>
